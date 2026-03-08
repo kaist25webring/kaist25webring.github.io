@@ -136,7 +136,7 @@ a {
   font-size: clamp(72px, 10vw, 120px);
   letter-spacing: 0.06em;
   color: var(--white);
-  margin-bottom: 4px;
+  margin-bottom: -120px;
   display: block;
 }
 
