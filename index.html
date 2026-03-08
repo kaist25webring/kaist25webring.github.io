@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KAIST Class of 2025 webring directory.">
+  <title>KAIST '25 Webring</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro-lock" aria-hidden="true"></div>
+
+  <section id="intro" class="intro" aria-label="KAIST 25 Webring intro">
+    <pre id="terminal" class="terminal" aria-live="polite"><span class="cursor">_</span></pre>
+
+    <div id="logo-system" class="logo-system" aria-hidden="true">
+      <div class="kaist-wordmark" id="kaist-wordmark" aria-label="KAIST wordmark">
+        <span style="--i:0">K</span><span style="--i:1">A</span><span style="--i:2">I</span><span style="--i:3">S</span><span style="--i:4">T</span>
+      </div>
+
+      <svg class="halo-svg" viewBox="-250 -250 500 500" aria-hidden="true">
+        <circle cx="0" cy="-40" r="220"></circle>
+        <circle r="3" fill="#93C5FD">
+          <animateMotion dur="12s" repeatCount="indefinite" path="M 220,-40 A 220,220 0 1,1 219.99,-40"></animateMotion>
+        </circle>
+      </svg>
+
+      <svg class="logo-svg" viewBox="-360 -170 720 340" role="img" aria-label="KAIST swoosh and halo">
+        <defs>
+          <linearGradient id="swoosh-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#1E3A6E"></stop>
+            <stop offset="25%" stop-color="#2563EB"></stop>
+            <stop offset="50%" stop-color="#93C5FD"></stop>
+            <stop offset="75%" stop-color="#2563EB"></stop>
+            <stop offset="100%" stop-color="#1E3A6E"></stop>
+          </linearGradient>
+        </defs>
+        <path id="swoosh-stroke" class="swoosh-stroke" d="M -300,0 C -200,-52 200,-52 300,0 C 200,52 -200,52 -300,0 Z"></path>
+        <path id="swoosh-fill" class="swoosh-fill" d="M -300,0 C -200,-52 200,-52 300,0 C 200,52 -200,52 -300,0 Z"></path>
+      </svg>
+    </div>
+  </section>
+  <div id="enter-hint" aria-hidden="true">press any key or scroll to enter</div>
+
+  <aside id="sidebar" aria-label="Node directory">
+    <div class="sidebar-header">NODES</div>
+    <div class="sidebar-divider"></div>
+    <ul id="sidebar-list" class="sidebar-list"></ul>
+  </aside>
+
+  <main>
+    <section id="ring-section" class="ring-section" aria-label="Member nodes">
+      <div id="node-field" class="node-field">
+        <canvas id="edge-canvas" aria-hidden="true"></canvas>
+        <div id="orb-layer" class="orb-layer" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>// ABOUT</h2>
+      <p>
+        This is a KAIST Class of 2025 webring: a curated loop of personal websites. Each node links to a student home on the web,
+        so you can discover projects, writing, and experiments by moving through the ring.
+      </p>
+      <p>Recommended GitHub Pages domain: <code>kaist25ring.github.io</code></p>
+      <p>
+        To join, open a pull request to the repository and add your entry to the member data file.
+        Repo: <a href="https://github.com/kaist25ring/kaist25ring.github.io" target="_blank" rel="noopener noreferrer" aria-label="Open KAIST 25 Webring GitHub repository">github.com/kaist25ring/kaist25ring.github.io</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div>KAIST '25 WEBRING</div>
+    <a href="https://github.com/kaist25ring/kaist25ring.github.io" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub repository for KAIST 25 Webring">GitHub Repo</a>
+    <div>Built by KAIST '25</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
